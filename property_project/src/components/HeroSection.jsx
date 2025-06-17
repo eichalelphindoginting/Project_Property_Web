@@ -10,28 +10,34 @@ const WalletIcon = <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0
 
 function HeroSection() {
   return (
-    <section id="hero" className="bg-brand-dark text-white pt-32 pb-20">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="hero" className="bg-blue-400 text-white pt-32 pb-20 text-white pt-32 pb-20 relative overflow-hidden">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Kolom Kiri: Gambar */}
         <div>
           <img src={houseImage} alt="Modern House" className="w-full h-auto drop-shadow-2xl" />
         </div>
 
         {/* Kolom Kanan: Teks & Form */}
-        <div className="flex flex-col justify-center">
-          <h1 className="text-5xl font-bold">Featured Properties<br />Just For You</h1>
-          <p className="mt-4 text-gray-300 max-w-lg">
-            Explore Our Top-Picked Properties Selected For Their Value, Location, And Lifestyle Benefits.
+        <div className="flex flex-col items-start">
+          <h1 className="text-black text-7xl font-bold">Featured Properties<br />Just For You</h1>
+          <p className="mt-4 text-black max-w-2xl text-justify">
+            Explore Our Top-Picked Properties Selected For Their Value, Location, And Lifestyle Benefits. Whether You're Buying Your First Home Or Looking For A Smart Investment, These Listings Offer The Best Of Both Worlds.
           </p>
           
-          <h3 className="mt-8 font-semibold">Search For Available Properties:</h3>
-          <div className="mt-4 bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+          <div className="mt-4 bg-blue-700 backdrop-blur-sm p-4 rounded-lg w-full">
+          <h3 className="mt-8 text-white font-semibold mb-7 text-3xl text-center">Search For Available Properties:</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-              <div className="relative"><span className="absolute left-3 top-2.5">{LocationIcon}</span><input type="text" placeholder="Location" className="w-full pl-10 pr-3 py-2 bg-white/20 rounded-md border border-white/20 focus:outline-none focus:ring-1 focus:ring-brand-accent" /></div>
-              <div className="relative"><span className="absolute left-3 top-2.5">{BuildingIcon}</span><input type="text" placeholder="Property Type" className="w-full pl-10 pr-3 py-2 bg-white/20 rounded-md border border-white/20 focus:outline-none focus:ring-1 focus:ring-brand-accent" /></div>
-              <div className="relative"><span className="absolute left-3 top-2.5">{WalletIcon}</span><input type="text" placeholder="Budget" className="w-full pl-10 pr-3 py-2 bg-white/20 rounded-md border border-white/20 focus:outline-none focus:ring-1 focus:ring-brand-accent" /></div>
+              <div className="relative">
+                <span className="absolute left-3 top-2.5">{LocationIcon}</span>
+                <input type="text" placeholder="Location" className="w-full pl-10 pr-3 py-2 bg-white/30 rounded-md border border-white/30 focus:outline-none focus:ring-1 focus:ring-brand-accent" /></div>
+              <div className="relative">
+                <span className="absolute left-3 top-2.5">{BuildingIcon}</span>
+                <input type="text" placeholder="Property Type" className="w-full pl-10 pr-3 py-2 bg-white/30 rounded-md border border-white/30 focus:outline-none focus:ring-1 focus:ring-brand-accent" /></div>
+              <div className="relative">
+                <span className="absolute left-3 top-2.5">{WalletIcon}</span>
+                <input type="text" placeholder="Budget" className="w-full pl-10 pr-3 py-2 bg-white/30 rounded-md border border-white/30 focus:outline-none focus:ring-1 focus:ring-brand-accent" /></div>
             </div>
-            <button className="w-full bg-brand-accent font-bold py-3 rounded-lg hover:bg-purple-700 transition-colors">SEARCH NOW</button>
+            <button className="w-full bg-brand-accent font-bold py-3 rounded-lg hover:bg-black transition-colors">SEARCH NOW</button>
           </div>
         </div>
       </div>

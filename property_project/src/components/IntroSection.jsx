@@ -12,7 +12,7 @@ function IntroSection() {
         </svg>
       </div>
 
-      <section id="intro" className="relative bg-brand-light-gray pt-32 pb-20">
+      <section id="intro" className="relative bg-brand-light-blue pt-32 pb-20">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Kolom Kiri: Teks */}
           <div className="text-brand-dark">
