@@ -1,0 +1,24 @@
+/* src/index.css */
+
+/* Baris ini mengimpor semua fungsionalitas dasar Tailwind v4 */
+@import "tailwindcss";
+
+/* Blok @theme adalah tempat kita melakukan semua kustomisasi
+  yang dulunya ada di tailwind.config.js 
+*/
+@theme {
+  /* Kita tetap menggunakan 'extend' agar tidak menghapus 
+    warna dan font default dari Tailwind.
+  */
+  extend: {
+    colors: {
+      'brand-dark': '#1a1a1a',    /* Hitam yang sangat gelap, tapi tidak pekat */
+      'brand-light': '#f5f5f5',   /* Putih gading yang lembut */
+      'brand-accent': '#c5a47e',  /* Aksen emas/perunggu yang mewah dan lembut */
+    },
+    fontFamily: {
+      /* Mengatur font 'Inter' sebagai font sans-serif default */
+      'sans': ['Inter', 'sans-serif'], 
+    }
+  }
+}
