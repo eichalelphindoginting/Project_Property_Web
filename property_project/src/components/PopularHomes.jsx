@@ -10,7 +10,7 @@ const properties = [
 
 function PopularHomes() {
   return (
-    <section id="popular" className="bg-brand-light-gray py-20">
+    <section id="popular" className="bg-blue-500 py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <p className="font-semibold text-brand-accent">POPULAR</p>
