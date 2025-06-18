@@ -10,22 +10,30 @@ const WalletIcon = <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0
 
 function HeroSection() {
   return (
-    <section id="hero" className="bg-blue-400 text-white pt-32 pb-20 text-white pt-32 pb-20 relative overflow-hidden">
+    <section className="relative overflow-hidden pt-32 pb-20 text-black"
+    style={{
+        backgroundImage: 'linear-gradient(to right, #d0eaff, #a8d0ff)', // Biru gradasi muda
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
+      <div className="absolute inset-0 bg-blue-300 backdrop-blur-sm z-0"></div>
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Kolom Kiri: Gambar */}
         <div>
-          <img src={houseImage} alt="Modern House" className="w-full h-auto drop-shadow-2xl" />
+          <img src={houseImage} alt="Modern House" className="w-[1500px] h-auto drop-shadow-2xl"/>
         </div>
 
         {/* Kolom Kanan: Teks & Form */}
         <div className="flex flex-col items-start">
-          <h1 className="text-black text-7xl font-bold">Featured Properties<br />Just For You</h1>
+          <h1 className="text-black text-7xl font-bold">
+            Featured Properties<br />Just For You
+            </h1>
           <p className="mt-4 text-black max-w-2xl text-justify">
             Explore Our Top-Picked Properties Selected For Their Value, Location, And Lifestyle Benefits. Whether You're Buying Your First Home Or Looking For A Smart Investment, These Listings Offer The Best Of Both Worlds.
           </p>
           
-          <div className="mt-4 bg-blue-700 backdrop-blur-sm p-4 rounded-lg w-full">
-          <h3 className="mt-8 text-white font-semibold mb-7 text-3xl text-center">Search For Available Properties:</h3>
+          <div className="mt-6 bg-blue-700 backdrop-blur-md p-6 rounded-lg w-full shadow-md border border-gray-200">
+          <h3 className="mt-8 text-black font-semibold mb-7 text-3xl text-center">Search For Available Properties:</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
               <div className="relative">
                 <span className="absolute left-3 top-2.5">{LocationIcon}</span>
@@ -37,7 +45,7 @@ function HeroSection() {
                 <span className="absolute left-3 top-2.5">{WalletIcon}</span>
                 <input type="text" placeholder="Budget" className="w-full pl-10 pr-3 py-2 bg-white/30 rounded-md border border-white/30 focus:outline-none focus:ring-1 focus:ring-brand-accent" /></div>
             </div>
-            <button className="w-full bg-brand-accent font-bold py-3 rounded-lg hover:bg-black transition-colors">SEARCH NOW</button>
+            <button className="w-full bg-brand-accent font-bold py-3 rounded-lg hover:bg-blue-400 transition-colors">SEARCH NOW</button>
           </div>
         </div>
       </div>

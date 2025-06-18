@@ -16,7 +16,7 @@ function Footer() {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   }}>
-    <div className="absolute inset-0 bg-black opacity-60"></div>
+    <div className="relative inset-0 bg-black opacity-60"></div>
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold">LOGO</h2>

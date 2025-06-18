@@ -10,7 +10,27 @@ const properties = [
 
 function PopularHomes() {
   return (
-    <section id="popular" className="bg-blue-500 py-20">
+    <section id="popular" className="relative bg-blue-500 pt-20"> {/* Sesuaikan pt-20 jika perlu */}
+      {/* Wavy Background SVG di bagian atas section ini */}
+      <div className="absolute left-0 w-full overflow-hidden leading-none z-10" style={{ top: '-1px' }}> {/* top: '-1px' untuk menghilangkan celah tipis */}
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="relative block w-full h-[100px]" // Hapus rotate-180 agar gelombang menghadap ke bawah
+        >
+          {/* Path SVG gelombang Anda */}
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,
+            82.39-16.72,168.19-17.73,250.45-.39C823.78,31,
+            906.67,72,985.66,92.83c70.05,18.48,146.53,
+            26.09,214.34,3V0H0V27.35A600.21,600.21,
+            0,0,0,321.39,56.44Z"
+            style={{ fill: '#41ADDD' }}  // Pastikan warna ini cocok dengan section sebelumnya
+          />
+        </svg>
+      </div>
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <p className="font-semibold text-brand-accent">POPULAR</p>
