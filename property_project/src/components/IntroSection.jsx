@@ -1,33 +1,43 @@
 import React from 'react';
+import { IoBusinessOutline, IoGridOutline, IoCarSportOutline, IoLocationOutline } from 'react-icons/io5';
+import HomeDesign from '../assets/Home Designs & Floor Plans _ South East QLD _ Hallmark Homes.jpeg'; // Pastikan path gambar benar
 
-const HouseIcon = <svg className="w-24 h-24 text-brand-accent" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z"></path></svg>;
+const IntroSection = () => {
+  const features = [
+    { icon: <IoBusinessOutline />, title: "Bangunan Berkualitas", desc: "Arsitek dan material terpilih dan berkualitas." },
+    { icon: <IoGridOutline />, title: "Desain Modern", desc: "Exterior dan interior minimalis dan modern." },
+    { icon: <IoLocationOutline />, title: "Lokasi Strategis", desc: "Dekat dengan fasilitas umum, stasiun, dan tol." },
+    { icon: <IoCarSportOutline />, title: "Akses Mudah", desc: "Jalan lebar yang bisa diakses 2 mobil." },
+  ];
 
-function IntroSection() {
   return (
-    <div className="relative bg-brand-dark">
-      {/* Wavy Background SVG - Dibuat dengan haikei.app */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[150px]">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-brand-light-gray"></path>
-        </svg>
-      </div>
-
-      <section id="intro" className="relative bg-brand-light-gray pt-32 pb-20">
-        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Kolom Kiri: Teks */}
-          <div className="text-brand-dark">
-            <h2 className="text-3xl font-bold leading-snug">
-              We Are A Dedicated Team Committed To Delivering The Best Solutions Through Innovation And Integrity. With A Strong Focus On Collaboration And Continuous Improvement, We Aim To Meet The Evolving Needs Of Our Clients And Community.
-            </h2>
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Kolom Kiri: Fitur */}
+          <div>
+            <h2 className="text-4xl font-bold text-gray-800 mb-2">Pilihan Tepat untuk Masa Depan</h2>
+            <p className="text-gray-500 mb-8">Empat alasan utama mengapa properti kami adalah investasi terbaik untuk Anda dan keluarga.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start">
+                  <div className="text-teal-500 text-4xl mr-4 flex-shrink-0 mt-1">{feature.icon}</div>
+                  <div>
+                    <h3 className="font-bold text-xl text-gray-800">{feature.title}</h3>
+                    <p className="text-gray-500 mt-1">{feature.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          {/* Kolom Kanan: Ikon Rumah */}
-          <div className="flex justify-center md:justify-end">
-            {HouseIcon}
+          {/* Kolom Kanan: Gambar */}
+          <div className="flex justify-center">
+            <img src={HomeDesign} alt="Desain Rumah" className="max-w-md w-full rounded-lg" />
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
-}
+};
 
 export default IntroSection;
