@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import IntroSection from './components/IntroSection';
 import PopularHomes from './components/PopularHomes';
 import Footer from './components/Footer';
+import Allright from './components/Allright';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <IntroSection />
       <PopularHomes />
       <Footer />
+      <Allright/>
     </div>
   );
 }

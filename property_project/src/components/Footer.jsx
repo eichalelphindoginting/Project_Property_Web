@@ -1,6 +1,7 @@
 import React from 'react';
 
 import bgImage from '../assets/bg_intro.jpg';
+import interiorImage from '../assets/Logo.png';
 
 // Ikon
 const PhoneIcon = <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>;
@@ -17,11 +18,16 @@ function Footer() {
     backgroundRepeat: "no-repeat",
   }}>
     <div className="relative inset-0 bg-black opacity-60"></div>
-      <div className="container mx-auto px-6">
+      <div className="relative container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold">LOGO</h2>
+          <div className="flex justify-center">
+                      <img 
+                        src={interiorImage} 
+                        alt="Interior Design" 
+                        className="w-[120px] h-auto rounded-lg"/>  
+                    </div>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-8 mb-12 text-white">
+        <div className="flex flex-wrap justify-center gap-8 mb-12 text-white">
           <input type="text" placeholder="Check In" className="bg-black text-center px-6 py-3 rounded-md border border-black focus:outline-none focus:ring-1 focus:ring-brand-accent" />
           <input type="text" placeholder="Check Out" className="bg-black text-center px-6 py-3 rounded-md border border-black focus:outline-none focus:ring-1 focus:ring-brand-accent" />
         </div>
@@ -30,9 +36,6 @@ function Footer() {
           <a href="#" className="flex items-center gap-3 hover:text-brand-accent">{InstagramIcon} @blablabla</a>
           <a href="#" className="flex items-center gap-3 hover:text-brand-accent">{YoutubeIcon} blablabla</a>
         </div>
-      </div>
-      <div className="text-center text-black text-sm mt-10 border-t border-black pt-8">
-        All Rights Reserved
       </div>
     </footer>
   );

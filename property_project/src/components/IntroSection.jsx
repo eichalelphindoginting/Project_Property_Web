@@ -45,13 +45,12 @@ function IntroSection() {
               Kami berkomitmen untuk memberikan layanan yang transparan dan inovatif, memastikan setiap klien menemukan properti yang sempurna untuk menumbuhkan impian mereka.
             </h2>
           </div>
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center">
             <img 
               src={interiorImage} 
               alt="Interior Design" 
-              className="w-full max-w-md rounded-lg shadow-lg"/>  
+              className="w-full max-w-md rounded-lg"/>  
           </div>
-          {/* Kolom Kanan: Ikon Rumah */}
 
         </div>
       </section>
