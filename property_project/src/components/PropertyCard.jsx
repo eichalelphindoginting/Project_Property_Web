@@ -29,7 +29,7 @@ const PropertyCard = ({ images, name, location, price, beds, baths, area }) => {
       <div className="relative">
         {/* Tampilkan gambar yang sedang aktif */}
         {images && images.length > 0 ? ( // Render gambar jika array images ada dan tidak kosong
-          <img src={images[currentImageIndex]} alt={name} className="w-full h-56 object-cover" /> // <<< PERBAIKAN: Gunakan images[currentImageIndex]
+          <img src={images[currentImageIndex]} alt={name} className="w-full h-[450px] object-cover" /> // <<< PERBAIKAN: Gunakan images[currentImageIndex]
         ) : (
           // Opsi: Tampilkan placeholder jika tidak ada gambar
           <div className="w-full h-56 bg-gray-200 flex items-center justify-center text-gray-500">
