@@ -12,7 +12,7 @@ function Navbar() {
   const links = ['Home', 'Properties', 'About', 'Contact'];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ${scrolled ? 'bg-brand-dark shadow-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ${scrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 py-5 flex justify-between items-center">
         <div className="text-white text-xl font-bold text-brand-light tracking-wider">
           AETHER
