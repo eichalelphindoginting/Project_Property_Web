@@ -17,16 +17,16 @@ const AboutSection = () => {
             <img 
               src={aboutImageUrl} 
               alt="Tim Properti Kami" 
-              className="rounded-xl shadow-2xl w-full max-w-md object-cover h-[500px]"
+              className="rounded-xl shadow-2xl w-full object-cover h-[500px]"
             />
           </div>
 
           {/* Kolom Kanan: Teks Deskripsi */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4 ">
               Membantu Anda Menemukan Rumah, Bukan Sekadar Properti.
             </h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="text-gray-600 mb-6 leading-relaxed text-justify">
               Kami lebih dari sekadar agen properti. Kami adalah tim profesional yang berdedikasi untuk memahami kebutuhan Anda dan memandu Anda melalui setiap langkah proses pembelian atau penjualan. Dengan pengalaman bertahun-tahun di industri ini, kami berkomitmen untuk memberikan layanan yang transparan, jujur, dan berorientasi pada kepuasan Anda.
             </p>
             
@@ -55,7 +55,8 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <a href="#contact" className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+            <a href="https://wa.me/6281367937941" className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+              
               Hubungi Tim Kami
             </a>
           </div>

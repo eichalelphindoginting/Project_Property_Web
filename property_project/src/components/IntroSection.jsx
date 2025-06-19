@@ -32,7 +32,7 @@ const IntroSection = () => {
           </div>
           {/* Kolom Kanan: Gambar */}
           <div className="flex justify-center">
-            <img src={HomeDesign} alt="Desain Rumah" className="max-w-md w-full rounded-lg" />
+            <img src={HomeDesign} alt="Desain Rumah" className="w-full rounded-lg" />
           </div>
         </div>
       </div>

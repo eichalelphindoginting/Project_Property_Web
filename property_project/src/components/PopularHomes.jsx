@@ -18,25 +18,25 @@ import Rumah3_3 from '../assets/properti/Sukasari/3.jpg';
 import Rumah3_4 from '../assets/properti/Sukasari/4.jpg';
 import Rumah3_5 from '../assets/properti/Sukasari/5.jpg';
 
-import Rumah4_1 from '../assets/properti/Bangunan - Desa Pasar Singkut (Tasik)/1.jpg';
-import Rumah4_2 from '../assets/properti/Bangunan - Desa Pasar Singkut (Tasik)/2.jpg';
-import Rumah4_3 from '../assets/properti/Bangunan - Desa Pasar Singkut (Tasik)/3.jpg';
+import Rumah4_1 from '../assets/properti/Singkut/1.jpg';
+import Rumah4_2 from '../assets/properti/Singkut/2.jpg';
+import Rumah4_3 from '../assets/properti/Singkut/3.jpg';
 
-import Rumah5_1 from '../assets/properti/Batu Kucing/1.jpg';
-import Rumah5_2 from '../assets/properti/Batu Kucing/2.jpg';
-import Rumah5_3 from '../assets/properti/Batu Kucing/3.jpg';
+import Rumah5_1 from '../assets/properti/BatuKucing/1.jpg';
+import Rumah5_2 from '../assets/properti/BatuKucing/2.jpg';
+import Rumah5_3 from '../assets/properti/BatuKucing/3.jpg';
 
-import Rumah6_1 from '../assets/properti/1,7M/1.jpg';
-import Rumah6_2 from '../assets/properti/1,7M/2.jpg';
-import Rumah6_3 from '../assets/properti/1,7M/3.jpg';
+import Rumah6_1 from '../assets/properti/1M700/1.jpg';
+import Rumah6_2 from '../assets/properti/1M700/2.jpg';
+import Rumah6_3 from '../assets/properti/1M700/3.jpg';
 
 import Rumah7_1 from '../assets/properti/6M/1.jpg';
 import Rumah7_2 from '../assets/properti/6M/2.jpg';
 import Rumah7_3 from '../assets/properti/6M/3.jpg';
 import Rumah7_4 from '../assets/properti/6M/4.jpg';
 
-import Rumah8_1 from '../assets/properti/270 Juta/1.jpg';
-import Rumah8_2 from '../assets/properti/270 Juta/2.jpg';
+import Rumah8_1 from '../assets/properti/270Juta/1.jpg';
+import Rumah8_2 from '../assets/properti/270Juta/2.jpg';
 
 
 const PrevSlideIcon = <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>;
@@ -122,8 +122,7 @@ const PopularHomes = () => {
     <section id="popular" className="bg-gray-50 py-20">
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800">Pilihan Properti Populer</h2>
-          <p className="text-gray-500 mt-2">Temukan properti yang paling banyak diminati oleh pelanggan kami.</p>
+          <h2 className="text-4xl font-bold text-gray-800">SAROLANGUN PROPERTI</h2>
         </div>
 
         {/* Slider Kontainer Utama */}

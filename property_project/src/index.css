@@ -1,2 +1,17 @@
 @import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
 
+html {
+  scroll-behavior: smooth; /* <<< TAMBAHKAN BARIS INI */
+}
+
+/* ... (CSS lainnya, termasuk custom-scrollbar-hide jika ada) ... */
+.custom-scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

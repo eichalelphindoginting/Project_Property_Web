@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear(); // Untuk copyright
 
   return (
-    <footer className="bg-gray-800 text-gray-300">
+    <footer id="footer" className="bg-gray-800 text-gray-300">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Kolom 1: Logo & Deskripsi */}
@@ -19,7 +19,7 @@ const Footer = () => {
               <a href="#" className="hover:text-white"><FaFacebook size={20} /></a>
               <a href="#" className="hover:text-white"><FaInstagram size={20} /></a>
               <a href="#" className="hover:text-white"><FaTwitter size={20} /></a>
-              <a href="#" className="hover:text-white"><FaWhatsapp size={20} /></a>
+              <a href="https://wa.me/6281367937941" target="_blank" rel="noopener noreferrer" className="hover:text-white"><FaWhatsapp size={20} /></a>
             </div>
           </div>
 
@@ -27,17 +27,17 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-white mb-4">Jelajahi</h4>
             <ul>
-              <li className="mb-2"><a href="#" className="hover:text-white">Properti Dijual</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-white">Properti Disewa</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-white">Agen</a></li>
+              <li className="mb-2"><a href="#popular" className="hover:text-white">Properti Dijual</a></li>
+              <li className="mb-2"><a href="#popular" className="hover:text-white">Properti Disewa</a></li>
+              <li className="mb-2"><a href="#popular" className="hover:text-white">Agen</a></li>
             </ul>
           </div>
           <div>
             <h4 className="font-bold text-white mb-4">Tentang</h4>
             <ul>
-              <li className="mb-2"><a href="#" className="hover:text-white">Tentang Kami</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-white">Karir</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-white">Blog</a></li>
+              <li className="mb-2"><a href="#about" className="hover:text-white">Tentang Kami</a></li>
+              <li className="mb-2"><a href="#about" className="hover:text-white">Karir</a></li>
+              <li className="mb-2"><a href="#about" className="hover:text-white">Blog</a></li>
             </ul>
           </div>
           <div>
@@ -47,10 +47,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Garis pemisah dan Copyright */}
-        <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500">
-          <p>&copy; {currentYear} NamaPerusahaanAnda. All rights reserved.</p>
-        </div>
       </div>
     </footer>
   );
