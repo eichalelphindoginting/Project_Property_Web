@@ -3,8 +3,7 @@
 import React from 'react';
 import { FaHandshake, FaStar, FaTrophy } from 'react-icons/fa';
 
-// Ganti dengan URL gambar tim, kantor, atau gambar ilustrasi yang relevan
-const aboutImageUrl = 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop';
+import aboutImageUrl from '../assets/about.jpg';
 
 const AboutSection = () => {
   return (
@@ -17,7 +16,7 @@ const AboutSection = () => {
             <img 
               src={aboutImageUrl} 
               alt="Tim Properti Kami" 
-              className="rounded-xl shadow-2xl w-full object-cover h-[500px]"
+              className="rounded-xl shadow-2xl w-full object-cover h-auto"
             />
           </div>
 
@@ -54,11 +53,6 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-
-            <a href="https://wa.me/6281367937941" className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
-              
-              Hubungi Tim Kami
-            </a>
           </div>
 
         </div>
