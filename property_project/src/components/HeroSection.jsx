@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import HeroImage from '../assets/rm1.jpeg'; // Ganti dengan gambar rumah yang cerah dan menarik
 import { IoSearchCircle, IoHomeOutline, IoBusinessOutline, IoLocationOutline } from 'react-icons/io5';
