@@ -22,17 +22,19 @@ const HeroSection = () => {
       {/* Konten Utama */}
       <div className="relative z-10 w-full max-w-4xl text-center text-white">
         
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-wide text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.7)] animate-fade-in-up">
+        <h1 className="md:text-5xl font-extrabold leading-tight tracking-wide text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.7)] animate-fade-in-up">
           <span className="bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-500 bg-clip-text text-transparent">
-            Temukan Hunian Terbaik
+            Jual Beli Properti di Sarolangun?
           </span>
           <br />
+        </h1>
+        <h1 className="md:text-4xl font-extrabold leading-tight tracking-wide text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.7)] animate-fade-in-up">
           <span className="text-white">
-            untuk Masa Depan Anda
+             Sarolangun Properti Solusinya
           </span>
         </h1>
-        <p className="mt-4 text-lg md:text-2xl text-gray-200 font-medium max-w-2xl mx-auto drop-shadow-md animate-fade-in-up delay-100 text-center">
-          Platform terpercaya untuk membantu Anda menemukan properti impian dengan mudah dan terpercaya.
+        <p className="mt-4 text-lg md:text-xl text-gray-200 font-medium mx-auto drop-shadow-md animate-fade-in-up delay-100 text-center">
+          Sarolangun Properti adalah mitra tepercaya Anda untuk menemukan properti residensial, rumah, tanah/kebun, dan komersial paling strategis di Sarolangun dan sekitarnya.
         </p>
 
 
@@ -40,11 +42,11 @@ const HeroSection = () => {
         <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-4 text-gray-200">
           <div className="flex items-center gap-2">
             <IoHomeOutline className="text-teal-400" />
-            <span>Banyak Properti Tersedia</span>
+            <span>Pilihan Terlengkap di Sarolangun</span>
           </div>
           <div className="flex items-center gap-2">
             <IoBusinessOutline className="text-teal-400" />
-            <span>Terjamin dan Terpercaya</span>
+            <span>Proses Aman & Legalitas Terjamin</span>
           </div>
         </div>
 
