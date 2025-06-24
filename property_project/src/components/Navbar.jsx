@@ -16,7 +16,7 @@ const Navbar = () => {
     };
     
   return (
-    <nav className="bg-white shadow-md fixed w-full top-0 z-50">
+    <nav className="bg-white shadow-md fixed w-full top-0 z-50g">
       <div className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           <img src={Logo} alt="Logo Properti" className="h-10" />
