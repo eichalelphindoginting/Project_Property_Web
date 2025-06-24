@@ -13,8 +13,8 @@ const HeroSection = () => {
   return (
     <div 
       id="home"
-      className="h-screen bg-cover bg-center flex flex-col justify-center items-center p-4 pt-20" // pt-20 untuk memberi ruang bagi navbar
-      style={{ backgroundImage: `url(${HeroImage})` }}
+      className="relative h-screen bg-cover bg-center flex flex-col justify-center items-center p-4 pt-20" // pt-20 untuk memberi ruang bagi navbar
+      style={{ backgroundImage: `url(${HeroImage})`,}}
     >
       {/* Overlay Gelap */}
       <div className="absolute inset-0 bg-black/60"></div>
