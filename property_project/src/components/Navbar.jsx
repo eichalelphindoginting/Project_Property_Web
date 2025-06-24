@@ -33,7 +33,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="https://wa.me/6281367937941"
+              href="https://wa.me/6281373381797"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-800 hover:bg-blue-950 text-yellow-500 font-bold py-2 px-6 rounded-lg transition-colors"
