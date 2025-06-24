@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Beranda', href: '#home' },
-    { name: 'Properti', href: '#popular' },
+    { name: 'Dijual', href: '#popular' },
     { name: 'Tentang Kami', href: '#about' },
     { name: 'Kontak', href: '#footer' },
   ];
@@ -36,7 +36,7 @@ const Navbar = () => {
               href="https://wa.me/6281367937941"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-lg transition-colors"
+              className="bg-blue-800 hover:bg-blue-950 text-yellow-500 font-bold py-2 px-6 rounded-lg transition-colors"
             >
               Hubungi Kami
             </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
         {/* Menu untuk Mobile (Dropdown) */}
           <div 
              className={`
-            md:hidden absolute top-full left-0 w-full bg-white shadow-md
+            md:hidden relative top-full left-0 w-full bg-white shadow-md
             transition-all duration-300 ease-in-out
             ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}
           `}

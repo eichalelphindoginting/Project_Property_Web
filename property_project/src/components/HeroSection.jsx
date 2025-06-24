@@ -20,17 +20,17 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60"></div>
       
       {/* Konten Utama */}
-      <div className="relative z-10 w-full max-w-4xl text-center text-white">
+      <div className="relative z-10 w-full max-w-6xl text-center text-white">
         
-        <h1 className="md:text-5xl font-extrabold leading-tight tracking-wide text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.7)] animate-fade-in-up">
-          <span className="bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-500 bg-clip-text text-transparent">
+        <h1 className="md:text-6xl font-extrabold leading-tight tracking-wide text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.7)] animate-fade-in-up">
+          <span className="bg-gradient-to-r from-orange-500 via-amber-500 to-orange-500 bg-clip-text text-transparent">
             Jual Beli Properti di Sarolangun?
           </span>
           <br />
         </h1>
         <h1 className="md:text-4xl font-extrabold leading-tight tracking-wide text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.7)] animate-fade-in-up">
           <span className="text-white">
-             Sarolangun Properti Solusinya
+             Sarolangun Properti Solusinya!!!
           </span>
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-200 font-medium mx-auto drop-shadow-md animate-fade-in-up delay-100 text-center">

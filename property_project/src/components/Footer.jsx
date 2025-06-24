@@ -1,4 +1,3 @@
-/* eslint-disable no-irregular-whitespace */
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'; // Menambahkan ikon untuk alamat, email, telepon
@@ -37,7 +36,6 @@ return (
                     <h4 className="text-lg font-semibold text-white mb-4 border-b-2 border-teal-500 pb-2 inline-block">Tentang</h4>
                     <ul className="space-y-3">
                         <li><a href="#about" className="text-gray-300 hover:text-white hover:underline transition-colors duration-300">Tentang Kami</a></li>
-                        <li><a href="#" className="text-gray-300 hover:text-white hover:underline transition-colors duration-300">Layanan</a></li>
                         <li><a href="https://wa.me/6281373381797" className="text-gray-300 hover:text-white hover:underline transition-colors duration-300">Daftar Jadi Agen</a></li>
                     </ul>
                 </div>
