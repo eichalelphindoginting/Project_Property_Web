@@ -23,10 +23,13 @@ const AboutSection = () => {
           {/* Kolom Kanan: Teks Deskripsi */}
           <div>
             <h2 className="text-4xl font-bold text-gray-800 mb-4 ">
-              Membantu Anda Menemukan Rumah, Bukan Sekadar Properti.
+              Mitra Anda Menuju Kepemilikan Properti yang Tepat
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-              Kami lebih dari sekadar agen properti. Kami adalah tim profesional yang berdedikasi untuk memahami kebutuhan Anda dan memandu Anda melalui setiap langkah proses pembelian atau penjualan. Dengan pengalaman bertahun-tahun di industri ini, kami berkomitmen untuk memberikan layanan yang transparan, jujur, dan berorientasi pada kepuasan Anda.
+              Selamat datang di Sarolangun Properti. Kami lahir dari pemahaman mendalam akan kebutuhan masyarakat Sarolangun dalam Jual-Beli properti. 
+              Misi kami sederhana yaitu membantu Anda, baik sebagai penjual maupun pembeli, untuk menavigasi proses jual-beli properti dengan mudah, transparan, dan aman. 
+              Bagi kami, setiap klien adalah prioritas. 
+              Kami tidak hanya menjual properti, kami membangun kepercayaan dan mewujudkan impian.
             </p>
             
             {/* Nilai-nilai Inti */}

@@ -1,13 +1,15 @@
 import React from 'react';
-import { IoBusinessOutline, IoGridOutline, IoCarSportOutline, IoLocationOutline } from 'react-icons/io5';
+import { IoBusinessOutline, IoLocationOutline} from 'react-icons/io5';
+import { GoLaw } from "react-icons/go";
+import { FaPeopleCarry } from "react-icons/fa";
 import HomeDesign from '../assets/Home Designs & Floor Plans _ South East QLD _ Hallmark Homes.jpeg'; // Pastikan path gambar benar
 
 const IntroSection = () => {
   const features = [
-    { icon: <IoBusinessOutline />, title: "Bangunan Berkualitas", desc: "Arsitek dan material terpilih dan berkualitas." },
-    { icon: <IoGridOutline />, title: "Desain Modern", desc: "Exterior dan interior minimalis dan modern." },
-    { icon: <IoLocationOutline />, title: "Lokasi Strategis", desc: "Dekat dengan fasilitas umum, stasiun, dan tol." },
-    { icon: <IoCarSportOutline />, title: "Akses Mudah", desc: "Jalan lebar yang bisa diakses 2 mobil." },
+    { icon: <IoBusinessOutline />, title: "Pilihan Properti Beragam", desc: "Tersedia pilihan rumah, tanah, dan properti komersial." },
+    { icon: <GoLaw />, title: "Bantuan Legalitas Profesional", desc: "Memastikan setiap transaksi aman dan terjamin." },
+    { icon: <IoLocationOutline />, title: "Lokasi Strategis Terpilih", desc: "Rekomendasi properti di lokasi dengan nilai terbaik." },
+    { icon: <FaPeopleCarry/>, title: "Tim Profesional dan Terpercaya", desc: "Kami mengutamakan kepuasan klien dalam jual-beli properti." },
   ];
 
   return (
@@ -16,8 +18,8 @@ const IntroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Kolom Kiri: Fitur */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-800 mb-2">Pilihan Tepat untuk Masa Depan</h2>
-            <p className="text-gray-500 mb-8">Empat alasan utama mengapa properti kami adalah investasi terbaik untuk Anda dan keluarga.</p>
+            <h2 className="text-4xl font-bold text-gray-800 mb-2">Apa keunggulan Sarolangun Properti?</h2>
+            <p className="text-gray-600 mb-8">Bersama Sarolangun Properti, Anda mendapatkan keuntungan lebih dari yang Anda harapkan</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start">
