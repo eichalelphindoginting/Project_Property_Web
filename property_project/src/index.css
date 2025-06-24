@@ -1,16 +1,13 @@
 @import "tailwindcss";
-@tailwind components;
+@tailwind utilities;
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth; /* <<< TAMBAHKAN BARIS INI */
+  scroll-behavior: smooth;
 }
-
-/* ... (CSS lainnya, termasuk custom-scrollbar-hide jika ada) ... */
 .custom-scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
-
 .custom-scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
