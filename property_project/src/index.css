@@ -1,14 +1,1 @@
 @import "tailwindcss";
-@tailwind utilities;
-@tailwind utilities;
-
-html {
-  scroll-behavior: smooth;
-}
-.custom-scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-.custom-scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}

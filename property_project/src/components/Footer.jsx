@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'; // Menambahkan ikon untuk alamat, email, telepon

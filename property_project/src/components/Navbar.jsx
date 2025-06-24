@@ -11,9 +11,12 @@ const Navbar = () => {
     { name: 'Tentang Kami', href: '#about' },
     { name: 'Kontak', href: '#footer' },
   ];
-
+    const handleLinkClick = () => {
+      setIsOpen(false)
+    };
+    
   return (
-    <nav className="bg-white shadow-md fixed w-full top-0 z-50">
+    <nav className="bg-white shadow-md fixed w-full top-0 z-50 relative">
       <div className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           <img src={Logo} alt="Logo Properti" className="h-10" />
@@ -52,13 +55,20 @@ const Navbar = () => {
         </div>
 
         {/* Menu untuk Mobile (Dropdown) */}
-        {isOpen && (
-          <div className="md:hidden mt-4 relative z-50">
+          <div 
+             className={`
+            md:hidden absolute top-full left-0 w-full bg-white shadow-md
+            transition-all duration-300 ease-in-out
+            ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}
+          `}
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1"> {/* Wrapper untuk padding */}
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block py-2 px-4 text-sm text-gray-700 hover:bg-teal-50 rounded"
+                onClick={handleLinkClick} // <-- Panggil fungsi ini
+                className="block py-2 px-3 text-base text-gray-700 hover:bg-teal-50 rounded"
               >
                 {link.name}
               </a>
@@ -72,7 +82,7 @@ const Navbar = () => {
               Hubungi Kami
             </a>
           </div>
-        )}
+      </div>
       </div>
     </nav>
   );
