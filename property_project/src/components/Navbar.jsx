@@ -54,35 +54,37 @@ const Navbar = () => {
           </div>
         </div>
 
+        
         {/* Menu untuk Mobile (Dropdown) */}
           <div 
-             className={`
-            md:hidden relative top-full left-0 w-full bg-white shadow-md
-            transition-all duration-300 ease-in-out
-            ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}
-          `}
-        >
-          <div className="px-2 pt-2 pb-3 space-y-1"> {/* Wrapper untuk padding */}
-            {navLinks.map((link) => (
+            className={`
+              md:hidden absolute top-full left-0 w-full bg-white shadow-md z-50
+              transition-all duration-300 ease-in-out
+              ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}
+            `}
+          >
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={handleLinkClick}
+                  className="block py-2 px-3 text-base text-gray-700 hover:bg-teal-50 rounded"
+                >
+                  {link.name}
+                </a>
+              ))}
               <a
-                key={link.name}
-                href={link.href}
-                onClick={handleLinkClick} // <-- Panggil fungsi ini
-                className="block py-2 px-3 text-base text-gray-700 hover:bg-teal-50 rounded"
+                href="https://wa.me/6281367937941"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full mt-2 bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300"
               >
-                {link.name}
+                Hubungi Kami
               </a>
-            ))}
-            <a
-              href="https://wa.me/6281367937941"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center w-full mt-2 bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300"
-            >
-              Hubungi Kami
-            </a>
+            </div>
           </div>
-      </div>
+
       </div>
     </nav>
   );

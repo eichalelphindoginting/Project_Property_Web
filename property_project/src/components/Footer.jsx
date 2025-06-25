@@ -85,7 +85,7 @@ return (
                             <FaTiktok size={24} className="drop-shadow-sm" />
                         </a>
                         <a 
-                            href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" 
+                            href="https://www.youtube.com/@Sarolangunproperti" 
                             target="_blank"                                 
                             rel="noopener noreferrer" 
                             className="text-gray-400 hover:text-red-600 transform hover:-translate-y-1 transition-colors duration-300 ease-in-out" 
